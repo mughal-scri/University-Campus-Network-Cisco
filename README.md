@@ -65,6 +65,9 @@ This project simulates a real-world university building network spanning **10 di
 
 ## ⚙️ Features Implemented
 
+> All features below exist in **both versions**. Routing and IP assignment differ between versions — see the Version Guide above.
+
+
 ### 1. 🔁 Routing — RIP v2 (Dynamic)
 - RIP version 2 with `no auto-summary`
 - Auto-discovers all routes across all zones
@@ -164,16 +167,38 @@ All serial links use `/30` subnets (`255.255.255.252`):
 
 ---
 
+## 🗺️ Where To Start — Version Guide
+
+This repo contains **two versions** of the same network. Start here to understand which file to open:
+
+| | Version 1 (Static) | Version 2 (Dynamic) |
+|---|---|---|
+| **PKT File** | `CN_Lab_Project_University_System_Static_Addressings.pkt` | `CN_Lab_Project_University_System_With_DHCP_and_RIP.pkt` |
+| **Report** | `CN_Project_Report.pdf` | `CN_Project_Report_v2.pdf` |
+| **Routing** | Manual static + floating static routes | RIP v2 — fully automatic |
+| **IP Assignment** | Manual static on every PC | DHCP — auto-assigned |
+| **Complexity** | Higher — teaches AD values and path selection | Lower to configure, higher to understand |
+| **Best for learning** | How routing decisions work manually | How dynamic protocols automate routing |
+
+> **Recommended:** Open v1 first to understand the static route logic, then open v2 to see how RIP simplifies it.
+
+---
+
 ## 📁 Repository Structure
 
 ```
 University-Campus-Network-Cisco/
 │
-├── GroupName_Project_CNLab.pkt   # Cisco Packet Tracer file (Static version)
-├── GroupName_Project_RIP.pkt     # Cisco Packet Tracer file (RIP + DHCP version)
-├── CN_Project_Report.pdf         # Full project report
-├── CN_Project_Presentation.pptx  # Presentation slides
-└── README.md                     # This file
+├── 📦 Packet Tracer Files
+│   ├── CN_Lab_Project_University_System_Static_Addressings.pkt   # v1 — Static routing + Floating static routes
+│   └── CN_Lab_Project_University_System_With_DHCP_and_RIP.pkt    # v2 — RIP v2 + DHCP
+│
+├── 📄 Reports
+│   ├── CN_Project_Report.pdf        # v1 Report — Static routing documented
+│   └── CN_Project_Report_v2.pdf     # v2 Report — RIP + DHCP documented (coming soon)
+│
+├── LICENSE
+└── README.md                        # This file
 ```
 
 ---
