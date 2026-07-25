@@ -216,7 +216,7 @@ University-Campus-Network-Cisco/
 | Name | GitHub |
 |------|--------|
 | Abdullah Mughal | [@mughal-scri](https://github.com/mughal-scri) |
-| Huzaifa Abdur Rahman | — |
+| Huzaifa Abdur Rahman | [@HuzaifaAbdurRahman](https://github.com/HuzaifaAbdurRahman) |
 
 ---
 
@@ -224,7 +224,7 @@ University-Campus-Network-Cisco/
 
 ```
 Co-authored-by: Abdullah Mughal <@mughal-scri>
-Co-authored-by: Huzaifa Abdur Rahman <>
+Co-authored-by: Huzaifa Abdur Rahman <@HuzaifaAbdurRahman>
 ```
 
 ---
